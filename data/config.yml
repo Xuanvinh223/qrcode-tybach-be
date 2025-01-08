@@ -1,0 +1,39 @@
+server:
+  port: "8080"
+  secret: "8-*e%yKHe3E%%u27$.eN3vdCsZq$Khc$Mp84ZDEQ+y$6f5Q%6rYDk4CS74KzFd2."
+  #release | debug
+  mode: "debug"
+
+cors:
+  global: "true"
+  ips: "http://127.0.0.1:8080,http://localhost:8080,http://qrcode.tybach.com.vn:3000,http://171.244.148.70:3000"
+
+database:
+  #mysql | postgres | sqlite | sqlserver
+  # driver: "sqlite"
+  # dbname: "data/database"
+  # username: "user"
+  # password: "password"
+  # host: "localhost"
+  # port: "5432"
+  # sslmode: "false"
+  # logmode: "true"
+
+  driver: "mysql"
+  dbname: "PrintQRWeb"
+  username: "test"
+  password: "passtest"
+  host: "192.168.40.54"
+  # host: '192.168.23.16'
+  port: "3306"
+  sslmode: "false"
+  logmode: "true"
+
+  # driver: 'sqlserver'
+  # dbname: 'PrintQRWeb-TestDB'
+  # username: 'tyx'
+  # password: 'tyx'
+  # host: '192.168.23.122'
+  # port: '1433'
+  # sslmode: 'false'
+  # logmode: 'true'

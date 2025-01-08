@@ -1,0 +1,43 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
+stages:
+  - build
+  - deploy
+
+variables:
+  DOCKER_TLS_CERTDIR: '/certs'
+
+build_docker_image:
+  stage: build
+  script:
+    - docker build -t tyxuan-web-printlabel-api:latest .
+    - docker save -o tyxuan-web-printlabel-api-latest.tar tyxuan-web-printlabel-api:latest
+  artifacts:
+    paths:
+      - tyxuan-web-printlabel-api-latest.tar
+    expire_in: 3 days
+  retry: 2
+  only:
+    - master
+
+deploy:
+  stage: deploy
+  before_script:
+    - 'which ssh-agent || ( apk add --update --no-cache openssh )'
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan -H 192.168.23.16 >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - scp tyxuan-web-printlabel-api-latest.tar root@192.168.23.16:/opt/
+    - ssh root@192.168.23.16 'docker rmi tyxuan-web-printlabel-api -f && docker rm tyxuan-web-printlabel-api -f'
+    - ssh root@192.168.23.16 'docker load < /opt/tyxuan-web-printlabel-api-latest.tar'
+    - ssh root@192.168.23.16 'docker run -itd --name tyxuan-web-printlabel-api --restart always -p 8080:8080 -v printlabel_api_data:/app/uploadfile tyxuan-web-printlabel-api:latest'
+  retry: 2
+  only:
+    - master
