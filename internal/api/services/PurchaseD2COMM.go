@@ -27,8 +27,8 @@ func (s *PurdService) GetPurListD2(requestParams request.PurListRequestKHPO) ([]
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 	db, err := database.CreateDatabaseConnection(configuration)
@@ -77,8 +77,8 @@ func (s *PurdService) SetPackQtyD2(requestParams request.PackQtyRequestS) error 
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 	db, err := database.CreateDatabaseConnection(configuration)
@@ -126,8 +126,8 @@ func (s *PurdService) GetDetailListD2(requestParams request.DetailListRequestS) 
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 	db, err := database.CreateDatabaseConnection(configuration)
@@ -166,8 +166,8 @@ func (s *PurdService) AddPackD2(SCNO string, CLBH string, ZLBH string, USERID st
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 
@@ -214,8 +214,8 @@ func (s *PurdService) DelPackD2(SCNO string, CLBH string, USERID string, QTYAD i
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 
@@ -282,8 +282,8 @@ func (s *PurdService) LoadingQtyD2(requestParams request.LoadRequestS) error {
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 	db, err := database.CreateDatabaseConnection(configuration)
@@ -360,8 +360,8 @@ func (s *PurdService) UploadLotFileD2(requestParams request.UploadLotFileRequest
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 	db, err := database.CreateDatabaseConnection(configuration)
@@ -476,8 +476,8 @@ func (s *PurdService) CFMD2(requestParams request.CFMRequest) error {
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 	db, err := database.CreateDatabaseConnection(configuration)

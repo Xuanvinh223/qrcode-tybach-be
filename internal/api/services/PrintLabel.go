@@ -22,8 +22,8 @@ func (s *PurPrintService) GetPurListPrint(requestParams request.PurListPrintRequ
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 	db, err := database.CreateDatabaseConnection(configuration)
@@ -76,8 +76,8 @@ func (s *PurPrintService) GetDetailListPrint(requestParams request.DetailListPri
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 	db, err := database.CreateDatabaseConnection(configuration)
@@ -122,8 +122,8 @@ func (s *PurPrintService) GetLabelPrint(requestParams request.LabelPrintRequest)
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 	db, err := database.CreateDatabaseConnection(configuration)

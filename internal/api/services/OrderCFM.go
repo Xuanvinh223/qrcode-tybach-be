@@ -20,8 +20,8 @@ func (s *PurCFMService) GetPurCFM(requestParams request.PurCFMRequest) ([]types.
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 	db, err := database.CreateDatabaseConnection(configuration)
@@ -89,8 +89,8 @@ func (s *PurCFMService) GetDetailCFM(requestParams request.DetailCFMRequest) ([]
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 	db, err := database.CreateDatabaseConnection(configuration)
@@ -125,8 +125,8 @@ func (s *PurCFMService) CFMALL(requestParams request.CFMAllRequest) error {
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 	db, err := database.CreateDatabaseConnection(configuration)

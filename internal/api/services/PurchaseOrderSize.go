@@ -27,8 +27,8 @@ func (s *PurSizeService) GetPurListSize(requestParams request.PurListRequestSize
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 	db, err := database.CreateDatabaseConnection(configuration)
@@ -85,8 +85,8 @@ func (s *PurSizeService) SetPackQtySize(requestParams request.PackQtyRequestSize
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 	db, err := database.CreateDatabaseConnection(configuration)
@@ -139,8 +139,8 @@ func (s *PurSizeService) GetDetailListSize(requestParams request.DetailListReque
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 	db, err := database.CreateDatabaseConnection(configuration)
@@ -181,8 +181,8 @@ func (s *PurSizeService) AddPackSize(SCNO string, CLBH string, USERID string, QT
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 
@@ -229,8 +229,8 @@ func (s *PurSizeService) DelPackSize(SCNO string, CLBH string, USERID string, QT
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 
@@ -296,8 +296,8 @@ func (s *PurSizeService) LoadingQtySize(requestParams request.LoadRequestSize) e
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 	db, err := database.CreateDatabaseConnection(configuration)
@@ -374,8 +374,8 @@ func (s *PurSizeService) UploadLotFileSize(requestParams request.UploadLotFileRe
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 	db, err := database.CreateDatabaseConnection(configuration)
@@ -490,8 +490,8 @@ func (s *PurSizeService) CFMSize(requestParams request.CFMRequest) error {
 	configuration := config.GetConfig()
 	configuration.Database.Driver = "sqlserver"
 	configuration.Database.Host = "192.168.40.9"
-	configuration.Database.Username = "tyx"
-	configuration.Database.Password = "tyx"
+	configuration.Database.Username = "tyxuan"
+	configuration.Database.Password = "jack"
 	configuration.Database.Dbname = "TB_ERP"
 	configuration.Database.Port = "1433"
 	db, err := database.CreateDatabaseConnection(configuration)
