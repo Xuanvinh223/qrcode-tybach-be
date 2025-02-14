@@ -6,7 +6,8 @@ server:
 
 cors:
   global: "true"
-  ips: "http://127.0.0.1:8080,http://localhost:8080,http://qrcode.tybach.com.vn:3000,http://171.244.148.70:3000"
+  # ips: "http://127.0.0.1:8080,http://localhost:8080,http://qrcode.tybach.com.vn:3000,http://171.244.148.70:3000"
+  ips: "http://127.0.0.1:8080,http://localhost:8080,http://qrcode.tybach.com.vn:3000,http://113.161.197.91:3000"
 
 database:
   #mysql | postgres | sqlite | sqlserver
